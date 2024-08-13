@@ -58,7 +58,7 @@
                 content: "";
                 width: 5px;
                 height: 11px;
-                background-image: url(../images/icons/three_dots.png);
+                background-image: url(../images/icons/three_dots.webp);
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -67,7 +67,7 @@
             &.active {
                 &::after {
                     content: "";
-                    background-image: url(../images/icons/three_dots_active.png);
+                    background-image: url(../images/icons/three_dots_active.webp);
                 }
             }
 

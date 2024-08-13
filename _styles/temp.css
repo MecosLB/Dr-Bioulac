@@ -131,7 +131,7 @@ h6 {
   content: "";
   width: 18px;
   aspect-ratio: 1;
-  background-image: url(../images/icons/pattern-sm.png);
+  background-image: url(../images/icons/pattern-sm.webp);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -249,14 +249,14 @@ h6 {
   content: "";
   width: 5px;
   height: 11px;
-  background-image: url(../images/icons/three_dots.png);
+  background-image: url(../images/icons/three_dots.webp);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .nav-menu .links > .dropdown.active::after {
   content: "";
-  background-image: url(../images/icons/three_dots_active.png);
+  background-image: url(../images/icons/three_dots_active.webp);
 }
 .nav-menu .links > .dropdown .sub-pages {
   position: absolute;
@@ -560,7 +560,7 @@ h6 {
 }
 
 #home .banner {
-  background-image: url(../images/bg-home.jpg);
+  background-image: url(../images/bg-home.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1015,7 +1015,7 @@ h6 {
   content: "";
   width: 25px;
   aspect-ratio: 1;
-  background-image: url(../images/icons/external_link.png);
+  background-image: url(../images/icons/external_link.webp);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
