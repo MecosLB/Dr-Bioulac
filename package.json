@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "sass": "^1.77.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "sass": "sass --watch ./_styles/main.scss ./_styles/temp.css",
+    "tailwind": "npx tailwindcss -i ./_styles/temp.css -o ./styles/main.css --watch"
+  }
+}

@@ -1,0 +1,177 @@
+#pathology {
+    position: relative;
+    background-color: $bg-light;
+    padding-top: 25px;
+    border-bottom: 8px solid $bg-darker;
+
+    .content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .section {
+        width: 100%;
+        font-weight: 800;
+        background-color: #bbc8f7;
+        padding: 10px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+        row-gap: 20px;
+
+        .icon {
+            width: 100px;
+            max-width: 100px;
+        }
+
+        h1 {
+            word-break: break-all;
+        }
+
+        @media (min-width: $md) {
+            flex-direction: row;
+        }
+    }
+
+    .banner {
+        display: flex;
+        align-items: center;
+        background-image: url(../images/bg-pathology.jpg);
+        background-position: top;
+        background-size: cover;
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            row-gap: 20px;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+
+            .btn-icon {
+                width: fit-content;
+                min-width: 150px;
+
+                h3 {
+                    font-size: 24px;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        row-gap: 40px;
+
+        @media (min-width: $lg) {
+            justify-content: space-between;
+            grid-template-columns: 390px 58%;
+        }
+
+        @media (min-width: 1440px) {
+            grid-template-columns: 390px 910px;
+        }
+    }
+
+    .quote {
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 1.4;
+        color: $main-lighter;
+        border-left: 4px solid $main-lighter;
+        padding-left: 40px;
+
+        &>.author {
+            position: absolute;
+            bottom: -1.5rem;
+            right: 0;
+            font-size: 19px;
+            font-weight: 500;
+            color: $main;
+
+            @media (min-width:$lg) {
+                bottom: 0;
+            }
+        }
+    }
+
+    .extra {
+        background-color: $bg-darker;
+
+        .grid {
+
+            h4,
+            h5,
+            h6,
+            p {
+                margin-bottom: 18px;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+
+            .left {
+                justify-content: space-evenly;
+                gap: 20px;
+                position: relative;
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .right {
+        h3 {
+            color: $main-light;
+        }
+    }
+
+    .treatments {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: $bg-dark;
+
+        &>.content {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .decorator {
+        position: absolute;
+        width: 100%;
+
+        &.top {
+            max-width: 540px;
+            top: 0;
+            right: 0;
+        }
+
+        &.mid {
+            max-width: 320px;
+            top: 0;
+            right: 0;
+            z-index: -1;
+
+            @media(min-width: $xl) {
+                top: unset;
+                bottom: -102px;
+            }
+        }
+    }
+}

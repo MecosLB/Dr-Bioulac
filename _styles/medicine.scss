@@ -1,0 +1,107 @@
+#medicine {
+    position: relative;
+    background-color: $bg-light;
+    padding-top: 25px;
+    border-bottom: 8px solid $bg-darker;
+
+    .content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .section {
+        width: 100%;
+        font-weight: 800;
+        background-color: #bbc8f7;
+        padding: 10px;
+    }
+
+    .picture {
+        height: 270px;
+        max-height: 270px;
+        object-fit: cover;
+    }
+
+    .banner {
+        display: flex;
+        height: 470px;
+        align-items: center;
+        background-image: url(../images/bg-medicine.jpg);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            max-width: 820px;
+            font-size: 30px;
+            color: $white;
+            font-weight: 800;
+            line-height: 1.4;
+        }
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        row-gap: 40px;
+
+        @media (min-width: $lg) {
+            justify-content: space-between;
+            grid-template-columns: 390px 58%;
+        }
+
+        @media (min-width: 1440px) {
+            grid-template-columns: 390px 910px;
+        }
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .right {
+        h3 {
+            color: $main-light;
+        }
+    }
+
+    .treatments {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: $bg-dark;
+
+        &>.content {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .decorator {
+        position: absolute;
+        width: 100%;
+
+        &.top {
+            max-width: 540px;
+            top: 0;
+            right: 0;
+        }
+
+        &.mid {
+            max-width: 320px;
+            top: 0;
+            right: 0;
+            z-index: -1;
+
+            @media(min-width: $xl) {
+                top: unset;
+                bottom: -102px;
+            }
+        }
+
+            &.bottom {
+                max-width: 280px;
+                right: 90px;
+                bottom: 80px;
+            }
+    }
+}

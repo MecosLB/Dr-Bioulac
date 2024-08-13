@@ -1,0 +1,34 @@
+.breadcrumb {
+    background-color: $bg-dark;
+    padding-top: 10.25px;
+    padding-bottom: 10.25px;
+
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .separator {
+        position: relative;
+        width: 20px;
+        height: 1px;
+        top: 2px;
+        background-color: $main-light;
+    }
+
+    a {
+        color: $main-light;
+        font-size: 13px;
+
+        &.active {
+            color: $main-active;
+        }
+    }
+
+    @media (max-width: calc($xl - 1px)) {
+        .content {
+            flex-direction: column;
+        }
+    }
+}

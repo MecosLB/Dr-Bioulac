@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+// Responsive breakpoints
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+// Variables
+$main: #010444;
+$main-active: #0f3aa0;
+$main-light: #4571da;
+$main-lighter: #7093e5;
+$bg-darker: #d8dafd;
+$bg-dark: #dee0fb;
+$bg-light: #eff0fd;
+$gray: #fafafa;
+$white: #fff;
+
+// Basic Set up
+body {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 500;
+    color: $main;
+}
+
+p {
+    font-size: 19px;
+    line-height: 28px;
+}
+
+p>a {
+    color: $main-lighter;
+    border-bottom: 2px solid $main-lighter;
+    text-decoration: none;
+}
+
+p>b {
+    font-weight: 800;
+}
+
+.link {
+    color: $main-light;
+
+    &.active {
+        color: $main-active;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 50px;
+    color: $main-light;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $main-lighter;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+.color-main {
+    color: $main;
+}
+
+.color-active {
+    color: $main-active;
+}
+
+.color-light {
+    color: $main-light;
+}
+
+.color-lighter {
+    color: $main-lighter;
+}
+
+.bg-darker {
+    background-color: $bg-darker;
+}
+
+.bg-dark {
+    background-color: $bg-dark;
+}
+
+.bg-light {
+    background-color: $bg-light;
+}
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content {
+    width: 100%;
+    max-width: 1400px
+}
+
+.btn-main {
+    font-size: 18px;
+    font-weight: 800;
+    color: $white;
+    line-height: 1;
+    background-color: $main-light;
+    padding: 12px 18px;
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    @extend .btn-main;
+
+    &::after {
+        position: relative;
+        content: "";
+        width: 18px;
+        aspect-ratio: 1;
+        background-image: url(../images/icons/pattern-sm.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+// Buttons
+// Those with color #4571da are clickable.
+
+@import './top-header.scss';
+@import './nav-menu.scss';
+@import './breadcrumb.scss';
+@import './footer.scss';
+@import './home.scss';
+@import './doctor.scss';
+@import './questions.scss';
+@import './article.scss';
+@import './review.scss';
+@import './medicine.scss';
+@import './pathology.scss';
+@import './treatments.scss';
+@import './therapy.scss';

@@ -1,0 +1,168 @@
+==================================
+***** WEBSITE SPECIFICATIONS *****
+==================================
+
+========
+### CODE
+========
+
+Static website
+Full html/css/js
+
+(No backend, no functionality, no contact form, no php)
+
+
+=========
+### SPEED
+=========
+
+Pages have to load extremely fast: instantaneously.
+
+
+========================
+### 9 TEMPLATES TO BUILD
+========================
+
+1. home
+2. doctor
+3. regenerative medicine
+  3.1 questions-answers
+  3.2 press review
+    3.2.1 press article
+4. treatment listing
+  4.1 pathology
+    4.1.1 therapy
+
+
+========
+### FONT
+========
+
+font-family
+https://fonts.google.com/specimen/Playfair+Display
+
+See also file: typo.html
+
+Sizes are listed in px; you can/may declare them in em or rem.
+
+body
+color #010444
+font-weight 500
+
+p
+font-size 19px
+line-height 28px
+
+a links in <p>
+color #7093e5
+border-bottom 2px solid #7093e5
+no text-decoration
+
+a links:hover in <p>
+same
+
+top nav menu: label a
++ language version
++ breadcrumbs label and separator
+color #4571da
+
+top nav menu: active label a
++ active language version
++ active breadcrumbs label
+color #0f3aa0
+
+b (bold) in <p>
+font-weight 800
+
+h1
+font-size 50px
+font-weight 800
+color #4571da
+
+h2
+font-size 42px
+font-weight 800
+color #7093e5
+
+Following titles depend on pages.
+
+h3
+font-size 36px
+font-weight 800
+color #7093e5
+
+h4
+font-size 30px
+font-weight 800
+color #7093e5
+
+h5
+font-size 24px
+font-weight 800
+color #7093e5
+
+h6
+font-size 22px
+font-weight 800
+color #7093e5
+
+Buttons
+Those with color #4571da are clickable.
+
+For specific font behaviour, see templates.
+
+
+==============
+### TOP HEADER
+==============
+
+"Access to training for doctors" is clickable, including the arrow.
+
+Website will be MAYBE translated in more than 2 languages.
+The templates wer designed to possibly accommodate 4 language versions.
+=> Even if only 1 or 2 language versions are displayed, website must be able to display the switch language area for 4 versions (or even 5) without breaking the top header, on desktop and mobile.
+
+
+============
+### NAV MENU
+============
+
+Main links with subpages are clickable as well (the ones with the 3 dots after the label).
+
+On desktop:
+	- on hover they show the subpages
+	- on hover you can click as well on the main directory label
+
+On mobile:
+	- on tap they show you the subpages
+	- then you can choose the label that you want to click
+	- top nav menu remains top-fixed when you scroll
+
+
+==============
+### RESPONSIVE
+==============
+
+On mobile, areas are displayed one below the other, in the order in which they appear on desktop.
+
+
+==================
+### PATHOLOGY PAGE
+==================
+
+Background image will vary according each pathology page.
+
+
+===========================================
+### BLOCKS WITH ICON + LABEL FOR TREATMENTS (homepage + treatments)
+===========================================
+
+Each squarred block with white border is clickable at 100% of its area, not only its icon or its title.
+We can add as many blocks as we want.
+
+
+==========
+### FOOTER
+==========
+
+Each main label and link is clickable.
