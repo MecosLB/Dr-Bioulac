@@ -133,6 +133,10 @@ h6 {
   background-repeat: no-repeat;
 }
 
+img {
+  aspect-ratio: auto;
+}
+
 .top-header {
   padding-top: 5.75px;
   padding-bottom: 5.75px;
