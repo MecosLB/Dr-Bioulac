@@ -632,7 +632,7 @@ img {
 }
 
 #home .banner {
-  background-image: url(../images/bg-home.webp);
+  background-image: url(../images/bg-home-mobile.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -662,6 +662,11 @@ img {
   max-width: 320px;
   top: -10%;
   right: -10%;
+}
+@media (min-width: 768px) {
+  #home .banner {
+    background-image: url(../images/bg-home.webp);
+  }
 }
 @media (min-width: 1024px) {
   #home .banner .decorator {
