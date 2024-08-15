@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 body {
   font-family: "Playfair Display", sans-serif;
   font-weight: 500;
@@ -1106,7 +1103,7 @@ h6 {
   display: flex;
   height: 470px;
   align-items: center;
-  background-image: url(../images/bg-medicine.jpg);
+  background-image: url(../images/bg-medicine.webp);
   background-position: center;
   background-size: cover;
 }
@@ -1214,7 +1211,7 @@ h6 {
 #pathology .banner {
   display: flex;
   align-items: center;
-  background-image: url(../images/bg-pathology.jpg);
+  background-image: url(../images/bg-pathology.webp);
   background-position: top;
   background-size: cover;
 }
