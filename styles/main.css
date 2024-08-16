@@ -245,8 +245,16 @@ img {
 }
 
 .nav-menu {
-  position: relative;
+  position: sticky;
+  top: 0;
   background-color: #fff;
+  z-index: 1000;
+}
+@media (min-width: 1280px) {
+  .nav-menu {
+    position: relative;
+    top: unset;
+  }
 }
 .nav-menu .content {
   display: flex;
