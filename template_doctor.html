@@ -5,7 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor</title>
-    <link href="./styles/main.css?v=0.01" rel="stylesheet">
+    <meta name="description" content="Doctor">
+
+    <link fetchpriority="high" rel="preload" href="./images/logo_dr_bioulac_en.webp" as="image" type="image/webp" />
+
+    <link rel="stylesheet" href="./styles/tailwind.css?v=0.01">
+    <link rel="stylesheet" href="./styles/main.css?v=0.052">
+
+    <!-- Fonts -->
+    <link rel="preload" href="./fonts/PlayfairDisplay-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/PlayfairDisplay-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/PlayfairDisplay-MediumItalic.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/PlayfairDisplay-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/PlayfairDisplay-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/PlayfairDisplay-ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./fonts/PlayfairDisplay-Black.ttf" as="font" type="font/ttf" crossorigin>
+
+    <!-- GSAP Core -->
+    <script src="./scripts/gsap.min.js?v=0.1" defer></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="./scripts/ScrollTrigger.min.js?v=0.1" defer></script>
+    <!-- Scripts -->
+    <script src="./scripts/nav-menu.js?v=0.1" defer></script>
 </head>
 
 <body>
@@ -185,7 +206,7 @@
                 </li>
             </ul>
 
-            <button id="toggleBtn" class="text-5xl z-30">
+            <button aria-label="Navigation menu" id="toggleBtn" class="text-5xl z-30">
                 <div class="icon relative"></div>
             </button>
         </section>
@@ -768,13 +789,6 @@
             </div>
         </section>
     </footer>
-
-    <!-- GSAP Core -->
-    <script src="./scripts/gsap.min.js?v=0.1"></script>
-    <!-- GSAP ScrollTrigger -->
-    <script src="./scripts/ScrollTrigger.min.js?v=0.1"></script>
-    <!-- Scripts -->
-    <script src="./scripts/nav-menu.js?v=0.1"></script>
 </body>
 
 </html>
